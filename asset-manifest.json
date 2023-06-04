@@ -1,26 +1,32 @@
 {
   "files": {
-    "main.js": "/asbplayer-staging/static/js/main.7b738c32.chunk.js",
-    "main.js.map": "/asbplayer-staging/static/js/main.7b738c32.chunk.js.map",
-    "runtime-main.js": "/asbplayer-staging/static/js/runtime-main.abb3b685.js",
-    "runtime-main.js.map": "/asbplayer-staging/static/js/runtime-main.abb3b685.js.map",
+    "main.js": "/asbplayer-staging/static/js/main.cb615cba.chunk.js",
+    "main.js.map": "/asbplayer-staging/static/js/main.cb615cba.chunk.js.map",
+    "runtime-main.js": "/asbplayer-staging/static/js/runtime-main.e3d9c19b.js",
+    "runtime-main.js.map": "/asbplayer-staging/static/js/runtime-main.e3d9c19b.js.map",
     "static/css/2.aa351a51.chunk.css": "/asbplayer-staging/static/css/2.aa351a51.chunk.css",
-    "static/js/2.c4b2ce37.chunk.js": "/asbplayer-staging/static/js/2.c4b2ce37.chunk.js",
-    "static/js/2.c4b2ce37.chunk.js.map": "/asbplayer-staging/static/js/2.c4b2ce37.chunk.js.map",
-    "static/js/3.3dcfc6c1.chunk.js": "/asbplayer-staging/static/js/3.3dcfc6c1.chunk.js",
-    "static/js/3.3dcfc6c1.chunk.js.map": "/asbplayer-staging/static/js/3.3dcfc6c1.chunk.js.map",
+    "static/js/2.d4cba3c3.chunk.js": "/asbplayer-staging/static/js/2.d4cba3c3.chunk.js",
+    "static/js/2.d4cba3c3.chunk.js.map": "/asbplayer-staging/static/js/2.d4cba3c3.chunk.js.map",
+    "static/js/3.a4bc6495.chunk.js": "/asbplayer-staging/static/js/3.a4bc6495.chunk.js",
+    "static/js/3.a4bc6495.chunk.js.map": "/asbplayer-staging/static/js/3.a4bc6495.chunk.js.map",
+    "static/js/4.9f9b02d1.chunk.js": "/asbplayer-staging/static/js/4.9f9b02d1.chunk.js",
+    "static/js/4.9f9b02d1.chunk.js.map": "/asbplayer-staging/static/js/4.9f9b02d1.chunk.js.map",
+    "static/js/5.2c505153.chunk.js": "/asbplayer-staging/static/js/5.2c505153.chunk.js",
+    "static/js/5.2c505153.chunk.js.map": "/asbplayer-staging/static/js/5.2c505153.chunk.js.map",
+    "static/js/6.7f12ea5c.chunk.js": "/asbplayer-staging/static/js/6.7f12ea5c.chunk.js",
+    "static/js/6.7f12ea5c.chunk.js.map": "/asbplayer-staging/static/js/6.7f12ea5c.chunk.js.map",
     "index.html": "/asbplayer-staging/index.html",
     "static/css/2.aa351a51.chunk.css.map": "/asbplayer-staging/static/css/2.aa351a51.chunk.css.map",
-    "static/js/2.c4b2ce37.chunk.js.LICENSE.txt": "/asbplayer-staging/static/js/2.c4b2ce37.chunk.js.LICENSE.txt",
-    "static/js/mp3-encoder.cb82d5b8.worker.js": "/asbplayer-staging/static/js/mp3-encoder.cb82d5b8.worker.js",
-    "static/js/mp3-encoder.cb82d5b8.worker.js.map": "/asbplayer-staging/static/js/mp3-encoder.cb82d5b8.worker.js.map",
+    "static/js/2.d4cba3c3.chunk.js.LICENSE.txt": "/asbplayer-staging/static/js/2.d4cba3c3.chunk.js.LICENSE.txt",
+    "static/js/mp3-encoder-worker.cb82d5b8.worker.js": "/asbplayer-staging/static/js/mp3-encoder-worker.cb82d5b8.worker.js",
+    "static/js/mp3-encoder-worker.cb82d5b8.worker.js.map": "/asbplayer-staging/static/js/mp3-encoder-worker.cb82d5b8.worker.js.map",
     "static/media/background-colored.cbc50e45.png": "/asbplayer-staging/static/media/background-colored.cbc50e45.png",
     "static/media/index.css": "/asbplayer-staging/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.abb3b685.js",
+    "static/js/runtime-main.e3d9c19b.js",
     "static/css/2.aa351a51.chunk.css",
-    "static/js/2.c4b2ce37.chunk.js",
-    "static/js/main.7b738c32.chunk.js"
+    "static/js/2.d4cba3c3.chunk.js",
+    "static/js/main.cb615cba.chunk.js"
   ]
 }
