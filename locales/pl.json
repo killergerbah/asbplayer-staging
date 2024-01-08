@@ -88,13 +88,16 @@
         "takeScreenshot": "Manualnie wykonaj zrzut ekranu",
         "toggleAsbplayerSubtitleTrack1": "Przełącz ścieżkę napisów 1 w asbplayer",
         "toggleAsbplayerSubtitleTrack2": "Przełącz ścieżkę napisów 2 w asbplayer",
+        "toggleAsbplayerSubtitleTrack3": "Przełącz ścieżkę napisów 3 w asbplayer",
         "toggleAsbplayerSubtitleTracks": "Przełącz ścieżki napisów w asbplayer",
         "toggleAutoPause": "Przełącz automatyczną pauzę",
         "toggleCondensedPlayback": "Przełącz odtwarzanie skondensowane",
+        "toggleFastForwardPlayback": "Toggle fast forward playback",
         "togglePlay": "Odtwarzanie/pauza",
         "toggleSubtitles": "Pokaż napisy",
         "toggleVideoSubtitleTrack1": "Przełącz ścieżkę napisów 1 w wideo",
         "toggleVideoSubtitleTrack2": "Przełącz ścieżkę napisów 2 w wideo",
+        "toggleVideoSubtitleTrack3": "Przełącz ścieżkę napisów 3 w wideo",
         "toggleVideoSubtitleTracks": "Przełącz ścieżki napisów w wideo",
         "updateLastCard": "Zaktualizuj ostatnio zapisaną kartę Anki o zrzuty ekranu",
         "toggleSidePanel": "Toggle side panel"
@@ -102,9 +105,22 @@
     "controls": {
         "autoPauseMode": "Automatyczna pauza",
         "condensedMode": "Skondensowana",
+        "fastForwardMode": "Fast-forward",
         "normalMode": "Normalna",
         "playbackRate": "Prędkość odtwarzania: {{rate}}",
-        "subtitleOffset": "Przesunięcie napisów"
+        "subtitleOffset": "Przesunięcie napisów",
+        "subtitleAlignment": "Subtitle Alignment",
+        "toggleSubtitles": "Toggle Subtitles",
+        "playbackMode": "Playback Mode",
+        "unloadVideo": "Unload Video",
+        "selectAudioTrack": "Select Audio Track",
+        "selectVideoElement": "Select Video Element",
+        "popOut": "Pop Out",
+        "popIn": "Pop In",
+        "toggleFullscreen": "Toggle Fullscreen",
+        "toggleTheaterMode": "Toggle Theater Mode",
+        "showSubtitlePlayer": "Show Subtitle List",
+        "hideSubtitlePlayer": "Hide Subtitle List"
     },
     "copyHistory": {
         "blank": "Puste",
@@ -166,12 +182,18 @@
             "description": "Ta strona jest używana przez asbplayer do przechwytywania audio."
         }
     },
+    "ftue": {
+        "welcome": "Welcome to asbplayer.",
+        "welcomeBody": "Check out the <0>readme</0> to see how to get started."
+    },
     "info": {
         "copiedSubtitle": "Skopiowano: {{text}}",
         "disabledAutoPause": "Automatyczna pauza: Wyłączona",
         "disabledCondensedPlayback": "Skondensowane odtwarzanie: Wyłączone",
+        "disabledFastForwardPlayback": "Fast forward playback: Off",
         "enabledAutoPause": "Automatyczna pauza: Włączona",
         "enabledCondensedPlayback": "Odtwarzanie skondensowane: Włączone",
+        "enabledFastForwardPlayback": "Fast forward playback: On",
         "exportedCard": "Wyeksportowana karta: {{result}}",
         "playbackRate": "Playback Rate: {{rate}}",
         "savedTimestamp": "Zapisano: {{timestamp}}",
@@ -205,6 +227,7 @@
         "autoPauseAtSubtitleStart": "Na początku napisu ",
         "autoPausePreference": "Preferencja automatycznej pauzy",
         "autoPausePreferenceHelperText": "Nie włącza automatycznej pauzy. Ustawia preferencję kiedy się zatrzymać gdy automatyczna pauza jest włączona. ",
+        "fastForwardModePlaybackRate": "Fast-forward Mode Playback Rate",
         "copyOnMine": "Skopiuj wykopane napisy do schowka",
         "corsHelperText": "Upewnij się że {{origin}} jest w liście webCorsOriginList w twoich ustawieniach AnkiConnect tak",
         "customCssField": "CSS: {{styleKey}}",
@@ -243,10 +266,10 @@
         "subtitleShadowColor": "Subtitle Shadow Color",
         "subtitleShadowThickness": "Subtitle Shadow Thickness",
         "subtitleOutlineThicknessHelperText": "Adds an outline around subtitle text. If this causes overlapping lines, try using a different font.",
+        "subtitlePositionOffset": "Przesunięcie pozycji napisów",
         "subtitleAlignment": "Wyrównanie napisów",
         "subtitleAlignmentBottom": "Dół",
         "subtitleAlignmentTop": "Góra",
-        "subtitlePositionOffset": "Przesunięcie pozycji napisów",
         "subtitleRegexFilter": "Filtr Regex napisów",
         "subtitleRegexFilterTextReplacement": "Zamiana tekstu z filtru Regex napisów",
         "subtitleSize": "Wielkość napisów",
@@ -263,5 +286,8 @@
         "unboundBind": "Nieprzypisane",
         "urlField": "Pole na URL",
         "wordField": "Pole na słowo "
+    },
+    "subtitlePlayer": {
+        "multiSubtitleSelectHelp": "Click, hold, and drag to mine multiple subtitles"
     }
 }
