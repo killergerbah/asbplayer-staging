@@ -18,12 +18,21 @@
         "startRecording": "Iniciar gravação",
         "stopRecording": "Parar gravação",
         "importSettings": "Importar configurações",
-        "exportSettings": "Exportar configurações"
+        "exportSettings": "Exportar configurações",
+        "hideOverlay": "Hide Overlay",
+        "decreaseOffsetButton": "Decrease offset to so that next subtitle is at current position. Hold to decrease by 100ms.",
+        "increaseOffsetButton": "Increase offset to so that previous subtitle is at current position. Hold to increase by 100ms."
     },
     "postMineAction": {
         "none": "Nada",
         "showAnkiDialog": "Mostrar caixa de diálogo do Anki",
-        "updateLastCard": "Atualizar último card"
+        "updateLastCard": "Atualizar último card",
+        "exportCard": "Export card"
+    },
+    "postMinePlayback": {
+        "remember": "Manter o estado anterior (como antes da mineração)",
+        "play": "Sempre reproduzir",
+        "pause": "Sempre pausado"
     },
     "ankiDialog": {
         "applySelection": "Aplicar seleção",
@@ -44,6 +53,9 @@
         "searchInAnki": "Pesquisar no Anki",
         "sentence": "Sentença",
         "source": "Fonte",
+        "track1": "Subtitle Track 1",
+        "track2": "Subtitle Track 2",
+        "track3": "Subtitle Track 3",
         "tagList": "Lista de strings separadas por vírgulas",
         "title": "Exportar para o Anki",
         "updateLastCard": "Atualizar último card",
@@ -68,7 +80,7 @@
         "ankiExport": "Minera a legenda atual e abre a caixa de diálogo do Anki",
         "copySubtitle": "Minera a legenda atual",
         "decreaseOffset": "Ajusta o atraso da legenda em -100ms",
-        "decreasePlaybackRate": "Ajusta a taxa de reprodução em -0.1",
+        "decreasePlaybackRate": "Diminuir a velocidade de reprodução",
         "extensionAnkiDialog": "Minera a legenda atual e abre a caixa de diálogo 'Exportar para o Anki'. Quando o vídeo está sincronizado sem um arquivo de legenda, inicia/para a gravação de áudio.",
         "extensionCopySubtitle": "Minera a legenda atual. Quando o vídeo está sincronizado sem um arquivo de legenda, inicia/para a gravação de áudio.",
         "extensionSelectSubtitleTrack": "Seleciona faixas de legendas para carregar.",
@@ -76,12 +88,13 @@
         "extensionToggleRecording": "Inicia/para a gravação de áudio manualmente, mesmo quando um arquivo de legenda está carregado.",
         "extensionUpdateLastCard": "Atualiza o último card do Anki criado com a mídia capturada pelo asbplayer. Quando o vídeo é sincronizado sem um arquivo de legenda, inicia/para a gravação de áudio.",
         "increaseOffset": "Ajusta atraso da legenda em +100ms",
-        "increasePlaybackRate": "Ajusta taxa de reprodução em +0.1",
+        "increasePlaybackRate": "Aumentar a velocidade de reprodução",
         "resetOffset": "Reseta o atraso da legenda",
         "seekBackward": "Retrocede 10 segundos",
         "seekBackwardOrForward": "Retroceda/avança 10 segundos",
         "seekForward": "Avança 10 segundos",
         "seekToBeginningOfCurrentSubtitle": "Vai para o início da legenda atual",
+        "seekToBeginningOfCurrentOrPreviousSubtitle": "Vai para o início da legenda atual/anterior",
         "seekToNextSubtitle": "Vai para a próxima legenda",
         "seekToPreviousSubtitle": "Vai para a legenda anterior",
         "seekToSubtitle": "Vá para a legenda anterior/próxima",
@@ -90,6 +103,7 @@
         "toggleAsbplayerSubtitleTrack2": "Alternar a faixa de legenda 2 no asbplayer",
         "toggleAsbplayerSubtitleTrack3": "Alternar a faixa de legenda 3 no asbplayer",
         "toggleAsbplayerSubtitleTracks": "Alterne a faixa de legenda no asbplayer",
+        "toggleAsbplayerBlurTrack": "Toggle subtitle track {{trackNumber}} blur in asbplayer",
         "toggleAutoPause": "Alternar pausa automática",
         "toggleCondensedPlayback": "Alternar reprodução condensada",
         "toggleFastForwardPlayback": "Alternar reprodução de avanço rápido",
@@ -100,7 +114,8 @@
         "toggleVideoSubtitleTrack3": "Alternar faixa de legenda 3 no vídeo",
         "toggleVideoSubtitleTracks": "Alterne a faixa de legenda no vídeo",
         "updateLastCard": "Atualiza o último cartão criado no Anki com captura de tela, áudio, etc. do asbplayer.",
-        "toggleSidePanel": "Alternar painel lateral"
+        "toggleSidePanel": "Alternar painel lateral",
+        "toggleRepeat": "Toggle repeat mode"
     },
     "controls": {
         "autoPauseMode": "Pausa automática",
@@ -150,7 +165,6 @@
             "cropScreenshot": "Recortar captura de tela",
             "displaySubtitles": "Exibir legendas",
             "dragAndDrop": "Permitir ação de arrastar e soltar para arquivos de legenda",
-            "subtitleListPreference": "Preferência da lista de legendas",
             "openSubtitleList": "Abrir lista de legendas ao carregar legendas",
             "mining": "Mineração",
             "miningKeyboardShortcuts": "Atalhos de Teclado para Mineração",
@@ -162,7 +176,8 @@
             "subtitles": "Legenda",
             "syncing": "Sincronização",
             "takeScreenshot": "Tirar captura de tela",
-            "updateAvailable": "Atualização disponível"
+            "updateAvailable": "Atualização disponível",
+            "enableOverlay": "Enable controls overlay"
         },
         "videoDataSync": {
             "emptySubtitleTrack": "Vazio",
@@ -177,17 +192,20 @@
             "selectVideo": "Selecione um elemento de vídeo para sincronizá-lo com o asbplayer.",
             "syncBeforeMine": "Um elemento de vídeo deve ser sincronizado com o asbplayer antes que ele possa ser minerado. Selecione um elemento de vídeo para sincronizá-lo com o asbplayer.",
             "videoElement": "Elemento de vídeo"
-        },
-        "backgroundAudioRecordingPage": {
-            "description": "Esta página é usada pelo asbplayer para capturar áudio."
         }
     },
     "ftue": {
         "welcome": "Welcome to asbplayer.",
         "welcomeBody": "Check out the <0>readme</0> to see how to get started."
     },
+    "update": {
+        "heading": "asbplayer just updated to version {{version}}.",
+        "body": "Check out the release notes <0>here</0>.",
+        "alert": "asbplayer updated to version {{version}}. Check out the <0>release notes</0>."
+    },
     "info": {
         "copiedSubtitle": "Copiado: {{text}}",
+        "copiedSubtitle2": "Copiado: {{result}}",
         "disabledAutoPause": "Pausa automática: Off",
         "disabledCondensedPlayback": "Reprodução condensada: Off",
         "disabledFastForwardPlayback": "Reprodução de avanço rápido: Off",
@@ -198,7 +216,13 @@
         "playbackRate": "Taxa de reprodução: {{rate}}",
         "savedTimestamp": "Salvo: {{timestamp}}",
         "updatedCard": "Atualizar card: {{result}}",
-        "activeTabPermissionObtained": "A gravação de áudio agora está habilitada para essa guia."
+        "enabledRepeatPlayback": "Repeat playback: On",
+        "disabledRepeatPlayback": "Repeat playback: Off",
+        "connectionSucceeded": "Connection succeeded",
+        "connectionFailed": "Connection failed",
+        "error": "Error: {{message}}",
+        "errorNoMessage": "Error",
+        "toggleSubtitlesShortcut": "Press \"{{keys}}\" to toggle subtitle display"
     },
     "landing": {
         "cta": "Arraste e solte arquivos de mídia e legenda, ou <1>procure</1>.",
@@ -214,9 +238,19 @@
         "prompt": "Clique no botão de ação do asbplayer no canto superior direito da janela do navegador para habilitar a gravação de áudio para esta guia.",
         "grantedPrompt": "A gravação de áudio foi habilitada para esta guia. Agora você pode começar a minerar."
     },
+    "audioCaptureFailed": {
+        "message": "DRM-protected audio cannot be captured on the Firefox version of asbplayer."
+    },
     "settings": {
+        "activeProfile": "Profile",
+        "defaultProfile": "Default",
+        "newProfile": "Add New Profile...",
+        "profileName": "Profile Name",
+        "enterProfileName": "Enter profile name",
+        "profileLimitReached": "Profile limit reached",
         "addCustomCss": "Adicionar CSS customizado",
         "addCustomField": "Adicionar campo customizado",
+        "alwaysPlayOnSubtitleRepeat": "Sempre reproduzir depois de invocar 'Vai para o início da legenda atual'",
         "anki": "Anki",
         "ankiConnectUrl": "URL do Anki Connect",
         "audioField": "Campo de áudio",
@@ -227,6 +261,7 @@
         "autoPauseAtSubtitleStart": "No início da legenda",
         "autoPausePreference": "Preferência de pausa automática",
         "autoPausePreferenceHelperText": "Não habilita a pausa automática. Define a preferência de quando pausar quando a pausa automática estiver habilitada.",
+        "speedChangeStep": "Passo de ajuste da velocidade de reprodução (ao utilizar os respectivos atalhos)",
         "fastForwardModePlaybackRate": "Taxa de reprodução no modo de avanço rápido",
         "copyOnMine": "Copiar legenda minerada para a área de transferência",
         "corsHelperText": "Certifique-se de que {{origin}} esteja na webCorsOriginList em suas configurações do AnkiConnect, como neste <0>vídeo</0>.",
@@ -238,6 +273,8 @@
         "imageBasedSubtitleScaleFactor": "Fator de escala para legendas baseadas em Imagem",
         "imageField": "Campo de imagem",
         "keyboardShortcuts": "Atalhos de teclado",
+        "hideInCardCreator": "Hide in card creator",
+        "showInCardCreator": "Show in card creator",
         "language": "Idioma",
         "maxImageHeight": "Altura máxima da imagem",
         "maxImageWidth": "Largura máxima da Imagem",
@@ -256,6 +293,10 @@
         "styleKey": "Tecla de estilo",
         "styleValue": "Valor de estilo",
         "sourceField": "Campo da fonte",
+        "track1Field": "Subtitle Track 1 Field",
+        "track2Field": "Subtitle Track 2 Field",
+        "track3Field": "Subtitle Track 3 Field",
+        "reset": "Reset",
         "subtitleAppearance": "Aparência da legenda",
         "subtitleBackgroundColor": "Cor de fundo da legenda",
         "subtitleBackgroundOpacity": "Opacidade do fundo da legenda",
@@ -270,6 +311,14 @@
         "subtitleAlignment": "Alinhamento da legenda",
         "subtitleAlignmentBottom": "Inferior",
         "subtitleAlignmentTop": "Superior",
+        "subtitleBlur": "Subtitle blur",
+        "subtitleTrack": "Subtitle Track",
+        "allSubtitleTracks": "All",
+        "subtitleTrackChoice": "Track {{trackNumber}}",
+        "subtitleTrackSelectorHelper": "Changes settings for ALL tracks. Settings that already have track-specific values are hidden.",
+        "subtitleBlurEntryLabel": "Track {{trackNumber}}",
+        "subtitleBlurDescription": "Hides selected subtitle tracks by blurring them. Can be un-blurred on mouse hover.",
+        "tabName": "Nome da guia",
         "subtitleRegexFilter": "Filtro regex da legenda",
         "subtitleRegexFilterTextReplacement": "Substituição de texto do filtro regex da legenda",
         "subtitleSize": "Tamanho da legenda",
@@ -285,7 +334,11 @@
         "unlockLocalFonts": "Clique para desbloquear o menu de fontes",
         "unboundBind": "Não vinculado",
         "urlField": "Campo da URL",
-        "wordField": "Campo da palavra"
+        "wordField": "Campo da palavra",
+        "webSocketClientEnabled": "Enable WebSocket client",
+        "webSocketServerUrl": "WebSocket Server URL",
+        "firefoxExtensionShortcutHelp": "Edit this shortcut from the Plugin manager at about:addons.",
+        "postMinePlayback": "Post-mining playback state"
     },
     "subtitlePlayer": {
         "multiSubtitleSelectHelp": "Clique, segure e arraste para minerar múltiplas legendas"
