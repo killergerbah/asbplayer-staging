@@ -23,6 +23,15 @@
         "decreaseOffsetButton": "Decrease offset to so that next subtitle is at current position. Hold to decrease by 100ms.",
         "increaseOffsetButton": "Increase offset to so that previous subtitle is at current position. Hold to increase by 100ms."
     },
+    "about": {
+        "title": "About asbplayer",
+        "license": "License",
+        "deps": "Dependencies",
+        "depName": "Name",
+        "purpose": "Purpose",
+        "appVersion": "App version",
+        "extensionVersion": "Extension version"
+    },
     "postMineAction": {
         "none": "Nada",
         "showAnkiDialog": "Mostrar caixa de diálogo do Anki",
@@ -33,6 +42,11 @@
         "remember": "Manter o estado anterior (como antes da mineração)",
         "play": "Sempre reproduzir",
         "pause": "Sempre pausado"
+    },
+    "pauseOnHoverMode": {
+        "disabled": "Disabled",
+        "inNotOut": "Enabled",
+        "inAndOut": "Enabled with auto-resume"
     },
     "ankiDialog": {
         "applySelection": "Aplicar seleção",
@@ -45,9 +59,11 @@
         "foundDuplicateNotes": "Encontrado {{count}} nota(s) com a palavra \"{{word}}\" no campo \"{{field}}\"",
         "foundNoDuplicateNote": "Nenhuma nota encontrada com a palavra \"{{word}}\" no campo \"{{field}}\"",
         "image": "Imagem",
+        "imageCaptureFailed": "Image capture failed",
         "imageFileLinkLost": "Link de arquivo de imagem perdido devido ao recarregamento da página",
         "openInAnki": "Abrir no Anki",
         "rerecord": "Regravar",
+        "rerecordAndApplySelection": "Record selected time range",
         "resetSlider": "Resetar",
         "rewind": "Retroceder",
         "searchInAnki": "Pesquisar no Anki",
@@ -62,7 +78,9 @@
         "url": "URL",
         "word": "Palavra",
         "zoomIn": "Ampliar",
-        "zoomOut": "Reduzir"
+        "zoomOut": "Reduzir",
+        "imagePreview": "Click to preview/edit",
+        "quickSelectFtue": "{{shortcut}} selects the last-used action."
     },
     "bar": {
         "donate": "Doar",
@@ -103,7 +121,8 @@
         "toggleAsbplayerSubtitleTrack2": "Alternar a faixa de legenda 2 no asbplayer",
         "toggleAsbplayerSubtitleTrack3": "Alternar a faixa de legenda 3 no asbplayer",
         "toggleAsbplayerSubtitleTracks": "Alterne a faixa de legenda no asbplayer",
-        "toggleAsbplayerBlurTrack": "Toggle subtitle track {{trackNumber}} blur in asbplayer",
+        "toggleAsbplayerBlurTrack": "Alternar o desfoque da faixa de legendas {{trackNumber}} no asbplayer",
+        "unblurAsbplayerTrack": "Desfocar a faixa de legenda {{trackNumber}} no asbplayer",
         "toggleAutoPause": "Alternar pausa automática",
         "toggleCondensedPlayback": "Alternar reprodução condensada",
         "toggleFastForwardPlayback": "Alternar reprodução de avanço rápido",
@@ -122,6 +141,7 @@
         "condensedMode": "Condensado",
         "fastForwardMode": "Avanço rápido",
         "normalMode": "Normal",
+        "repeatMode": "Repeat",
         "playbackRate": "Taxa de reprodução",
         "subtitleOffset": "Atraso da legenda",
         "subtitleAlignment": "Alinhamento da legenda",
@@ -135,13 +155,15 @@
         "toggleFullscreen": "Alternar tela cheia",
         "toggleTheaterMode": "Alternar modo teatro",
         "showSubtitlePlayer": "Mostrar lista de legendas",
-        "hideSubtitlePlayer": "Ocultar lista de legendas"
+        "hideSubtitlePlayer": "Ocultar lista de legendas",
+        "currentTimestamp": "Current Timestamp"
     },
     "copyHistory": {
         "blank": "Em branco",
         "downloadMinedSubsAsSrt": "Baixar legendas mineradas como SRT",
         "exportToAnki": "Exportar para o Anki",
-        "miningHistoryEmpty": "O histórico de mineração está vazio."
+        "miningHistoryEmpty": "O histórico de mineração está vazio.",
+        "deleteAll": "Clear"
     },
     "error": {
         "bothAudioAndVideNotAllowed": "Não é possível carregar simultaneamente um arquivo de áudio e um arquivo de vídeo",
@@ -182,6 +204,7 @@
         "videoDataSync": {
             "emptySubtitleTrack": "Vazio",
             "loadSubtitlesFirst": "Legendas devem ser carregadas antes que você possa começar a minerar.",
+            "failedToAutoLoad": "Could not auto-load subtitles in your preferred language.",
             "rememberTrackPreference": "Lembrar dessas escolhas de faixa para este site",
             "selectSubtitles": "Selecionar legenda",
             "subtitleTrack": "Selecionar faixa",
@@ -222,7 +245,8 @@
         "connectionFailed": "Connection failed",
         "error": "Error: {{message}}",
         "errorNoMessage": "Error",
-        "toggleSubtitlesShortcut": "Press \"{{keys}}\" to toggle subtitle display"
+        "toggleSubtitlesShortcut": "Press \"{{keys}}\" to toggle subtitle display",
+        "manualMiningIntervalPrompt": "Use mining shortcut again to select time range"
     },
     "landing": {
         "cta": "Arraste e solte arquivos de mídia e legenda, ou <1>procure</1>.",
@@ -287,6 +311,7 @@
         "preCacheSubtitleDom": "Pré-carregar DOM de Legenda",
         "preCacheSubtitleDomHelperText": "Ao ser habilitado, o asbplayer antecipa a renderização de elementos de texto de legendas em uma área fora da tela, reutilizando esses elementos para a exibição de legendas. Essa abordagem possibilita a modificação persistente do texto da legenda por meio de código externo antes de sua apresentação.",
         "recordingBind": "Gravando",
+        "recordWithAudioPlayback": "Gravar com reprodução de áudio",
         "rememberSubtitleOffset": "Lembrar do atraso da legenda",
         "sentenceField": "Campo da sentença",
         "streamingVideo": "Streaming de vídeo",
@@ -308,6 +333,7 @@
         "subtitleShadowThickness": "Expessura da sombra da legenda",
         "subtitleOutlineThicknessHelperText": "Adiciona um contorno ao redor do texto da legenda. Se isso causar sobreposição de linhas, tente usar uma fonte diferente.",
         "subtitlePositionOffset": "Deslocamento da posição da legenda a partir da parte inferior",
+        "topSubtitlePositionOffset": "Deslocamento da posição da legenda a partir da parte superior",
         "subtitleAlignment": "Alinhamento da legenda",
         "subtitleAlignmentBottom": "Inferior",
         "subtitleAlignmentTop": "Superior",
@@ -323,6 +349,7 @@
         "subtitleRegexFilterTextReplacement": "Substituição de texto do filtro regex da legenda",
         "subtitleSize": "Tamanho da legenda",
         "subtitleThickness": "Expessura da fonte da legenda",
+        "subtitlesWidth": "Subtitles Width",
         "surroundingSubtitlesCountRadius": "Raio de contagem de legendas ao redor",
         "surroundingSubtitlesTimeRadius": "Raio de tempo das legendas ao redor",
         "tags": "Tags",
@@ -338,7 +365,8 @@
         "webSocketClientEnabled": "Enable WebSocket client",
         "webSocketServerUrl": "WebSocket Server URL",
         "firefoxExtensionShortcutHelp": "Edit this shortcut from the Plugin manager at about:addons.",
-        "postMinePlayback": "Post-mining playback state"
+        "postMinePlayback": "Post-mining playback state",
+        "pauseOnHoverMode": "Auto-pause when mousing over subtitles"
     },
     "subtitlePlayer": {
         "multiSubtitleSelectHelp": "Clique, segure e arraste para minerar múltiplas legendas"

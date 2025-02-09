@@ -23,6 +23,15 @@
         "decreaseOffsetButton": "Zmniejsz przesunięcie, aby następne napisy znalazły się na obecnej pozycji. Przytrzymaj, aby zmniejszyć o 100 Ms.",
         "increaseOffsetButton": "Zwiększ przesunięcie, aby poprzednie napisy znalazły się na obecnej pozycji. Przytrzymaj, aby zwiększyć o 100 Ms."
     },
+    "about": {
+        "title": "About asbplayer",
+        "license": "License",
+        "deps": "Dependencies",
+        "depName": "Name",
+        "purpose": "Purpose",
+        "appVersion": "App version",
+        "extensionVersion": "Extension version"
+    },
     "postMineAction": {
         "none": "Nic nie rób",
         "showAnkiDialog": "Pokaż okno dialogowe Anki",
@@ -33,6 +42,11 @@
         "remember": "Zachowaj poprzedni stan (przed kopaniem)",
         "play": "Zawsze odtwarzaj",
         "pause": "Zawsze pauzuj"
+    },
+    "pauseOnHoverMode": {
+        "disabled": "Disabled",
+        "inNotOut": "Enabled",
+        "inAndOut": "Enabled with auto-resume"
     },
     "ankiDialog": {
         "applySelection": "Zastosuj wybór",
@@ -45,9 +59,11 @@
         "foundDuplicateNotes": "Znaleziono {{count}} notatek ze słowem \"{{word}}\" w polu \"{{field}}\"",
         "foundNoDuplicateNote": "Nie znaleziono żadnych notatek ze słowem \"{{word}}\" w polu \"{{field}}\"",
         "image": "Obraz",
+        "imageCaptureFailed": "Image capture failed",
         "imageFileLinkLost": "Link do pliku obrazu utracony przez przeładowanie strony",
         "openInAnki": "Otwórz w Anki",
         "rerecord": "Nagraj ponownie",
+        "rerecordAndApplySelection": "Record selected time range",
         "resetSlider": "Resetuj",
         "rewind": "Przewiń",
         "searchInAnki": "Szukaj w Anki",
@@ -62,7 +78,9 @@
         "url": "URL",
         "word": "Słowo",
         "zoomIn": "Przybliż",
-        "zoomOut": "Oddal"
+        "zoomOut": "Oddal",
+        "imagePreview": "Click to preview/edit",
+        "quickSelectFtue": "{{shortcut}} selects the last-used action."
     },
     "bar": {
         "donate": "Wesprzyj",
@@ -104,6 +122,7 @@
         "toggleAsbplayerSubtitleTrack3": "Przełącz ścieżkę napisów 3 w asbplayer",
         "toggleAsbplayerSubtitleTracks": "Przełącz ścieżki napisów w asbplayer",
         "toggleAsbplayerBlurTrack": "Przełącz rozmycie ścieżki napisów {{trackNumber}}",
+        "unblurAsbplayerTrack": "Unblur subtitle track {{trackNumber}} in asbplayer",
         "toggleAutoPause": "Przełącz automatyczną pauzę",
         "toggleCondensedPlayback": "Przełącz odtwarzanie skondensowane",
         "toggleFastForwardPlayback": "Przełącz tryb przyspieszonego odtwarzania",
@@ -122,6 +141,7 @@
         "condensedMode": "Skondensowana",
         "fastForwardMode": "Przyspieszone odtwarzanie",
         "normalMode": "Normalna",
+        "repeatMode": "Repeat",
         "playbackRate": "Prędkość odtwarzania: {{rate}}",
         "subtitleOffset": "Przesunięcie napisów",
         "subtitleAlignment": "Wyrównanie napisów",
@@ -135,13 +155,15 @@
         "toggleFullscreen": "Przełącz tryb pełnoekranowy",
         "toggleTheaterMode": "Przełącz tryb kinowy",
         "showSubtitlePlayer": "Pokaż listę napisów",
-        "hideSubtitlePlayer": "Schowaj listę napisów"
+        "hideSubtitlePlayer": "Schowaj listę napisów",
+        "currentTimestamp": "Current Timestamp"
     },
     "copyHistory": {
         "blank": "Puste",
         "downloadMinedSubsAsSrt": "Pobierz wykopane napisy jako plik SRT",
         "exportToAnki": "Wyeksportuj do Anki",
-        "miningHistoryEmpty": "Historia kopania jest pusta."
+        "miningHistoryEmpty": "Historia kopania jest pusta.",
+        "deleteAll": "Clear"
     },
     "error": {
         "bothAudioAndVideNotAllowed": "Nie można załadować plików audio i wideo naraz",
@@ -182,6 +204,7 @@
         "videoDataSync": {
             "emptySubtitleTrack": "Pusta",
             "loadSubtitlesFirst": "Napisy muszą być załadowane zanim zaczniesz kopać.",
+            "failedToAutoLoad": "Could not auto-load subtitles in your preferred language.",
             "rememberTrackPreference": "Zapamiętaj ustawienia ścieżek dla tej strony",
             "selectSubtitles": "Wybierz napisy",
             "subtitleTrack": "Ścieżka napisów",
@@ -222,7 +245,8 @@
         "connectionFailed": "Połączenie nieudane",
         "error": "Błąd: {{message}}",
         "errorNoMessage": "Błąd",
-        "toggleSubtitlesShortcut": "Naciśnij \"{{keys}}\", aby przełączyć wyświetlanie napisów"
+        "toggleSubtitlesShortcut": "Naciśnij \"{{keys}}\", aby przełączyć wyświetlanie napisów",
+        "manualMiningIntervalPrompt": "Use mining shortcut again to select time range"
     },
     "landing": {
         "cta": "Przenieś i upuść napisy i pliki medialne, lub <1>przeglądaj</1>.",
@@ -287,6 +311,7 @@
         "preCacheSubtitleDom": "Wstępnie załaduj DOM napisów do pamięci Cache",
         "preCacheSubtitleDomHelperText": "If enabled, asbplayer will pre-render subtitle text elements in an offscreen document, and re-use those elements for subtitle display. This allows external code to persistently modify subtitle text before it is displayed.",
         "recordingBind": "Nagrywanie",
+        "recordWithAudioPlayback": "Gravar com reprodução de áudio",
         "rememberSubtitleOffset": "Zapamiętaj przesunięcie napisów",
         "sentenceField": "Pole na zdanie",
         "streamingVideo": "Strumieniowanie wideo",
@@ -308,6 +333,7 @@
         "subtitleShadowThickness": "Wielkość cienia napisów",
         "subtitleOutlineThicknessHelperText": "Dodaje obwódkę wokół napisów. Jeżeli to ustawienie powoduje nakładanie się linii tekstu, spróbuj użyć innej czcionki.",
         "subtitlePositionOffset": "Przesunięcie pozycji napisów",
+        "topSubtitlePositionOffset": "Subtitle position offset from top",
         "subtitleAlignment": "Wyrównanie napisów",
         "subtitleAlignmentBottom": "Dół",
         "subtitleAlignmentTop": "Góra",
@@ -323,6 +349,7 @@
         "subtitleRegexFilterTextReplacement": "Zamiana tekstu z filtru Regex napisów",
         "subtitleSize": "Wielkość napisów",
         "subtitleThickness": "Grubość czcionki napisów",
+        "subtitlesWidth": "Subtitles Width",
         "surroundingSubtitlesCountRadius": "Limit liczby napisów otaczających",
         "surroundingSubtitlesTimeRadius": "Limit czasu napisów otaczających",
         "tags": "Tagi",
@@ -338,7 +365,8 @@
         "webSocketClientEnabled": "Włącz klienta WebSocket",
         "webSocketServerUrl": "Adres URL serwera WebSocket",
         "firefoxExtensionShortcutHelp": "Edytuj ten skrót z poziomu menedżera wtyczek na about:addons.",
-        "postMinePlayback": "Stan odtwarzania po kopaniu"
+        "postMinePlayback": "Stan odtwarzania po kopaniu",
+        "pauseOnHoverMode": "Auto-pause when mousing over subtitles"
     },
     "subtitlePlayer": {
         "multiSubtitleSelectHelp": "Kliknij, przytrzymaj i przeciągnij, aby wykopać więcej linii napisów"

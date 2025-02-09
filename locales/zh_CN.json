@@ -23,6 +23,15 @@
         "decreaseOffsetButton": "Decrease offset to so that next subtitle is at current position. Hold to decrease by 100ms.",
         "increaseOffsetButton": "Increase offset to so that previous subtitle is at current position. Hold to increase by 100ms."
     },
+    "about": {
+        "title": "About asbplayer",
+        "license": "License",
+        "deps": "Dependencies",
+        "depName": "Name",
+        "purpose": "Purpose",
+        "appVersion": "App version",
+        "extensionVersion": "Extension version"
+    },
     "postMineAction": {
         "none": "None",
         "showAnkiDialog": "Show Anki dialog",
@@ -33,6 +42,11 @@
         "remember": "Keep previous state (as before mining)",
         "play": "Always play",
         "pause": "Always pause"
+    },
+    "pauseOnHoverMode": {
+        "disabled": "Disabled",
+        "inNotOut": "Enabled",
+        "inAndOut": "Enabled with auto-resume"
     },
     "ankiDialog": {
         "applySelection": "应用选中时间范围",
@@ -45,9 +59,11 @@
         "foundDuplicateNotes": "已发现{{count}}张 {{field}} 字段中含有单词 {{word}} 的卡片",
         "foundNoDuplicateNote": "未发现 {{field}} 字段中含有单词 {{word}} 的卡片",
         "image": "图像",
+        "imageCaptureFailed": "Image capture failed",
         "imageFileLinkLost": "由于页面重新加载，图像文件链接丢失",
         "openInAnki": "在Anki中打开",
         "rerecord": "重新录制音频",
+        "rerecordAndApplySelection": "Record selected time range",
         "resetSlider": "重置",
         "rewind": "倒带",
         "searchInAnki": "在Anki中搜索",
@@ -62,7 +78,9 @@
         "url": "URL",
         "word": "单词",
         "zoomIn": "缩小",
-        "zoomOut": "放大"
+        "zoomOut": "放大",
+        "imagePreview": "Click to preview/edit",
+        "quickSelectFtue": "{{shortcut}} selects the last-used action."
     },
     "bar": {
         "donate": "捐赠作者",
@@ -104,6 +122,7 @@
         "toggleAsbplayerSubtitleTrack3": "切换asbplayer中的字幕音轨3",
         "toggleAsbplayerSubtitleTracks": "在asbplayer中切换字幕音轨",
         "toggleAsbplayerBlurTrack": "Toggle subtitle track {{trackNumber}} blur in asbplayer",
+        "unblurAsbplayerTrack": "Unblur subtitle track {{trackNumber}} in asbplayer",
         "toggleAutoPause": "切换自动暂停",
         "toggleCondensedPlayback": "切换压缩播放",
         "toggleFastForwardPlayback": "Toggle fast forward playback",
@@ -122,6 +141,7 @@
         "condensedMode": "冷凝",
         "fastForwardMode": "Fast-forward",
         "normalMode": "典型的",
+        "repeatMode": "Repeat",
         "playbackRate": "播放速率",
         "subtitleOffset": "字幕偏移",
         "subtitleAlignment": "Subtitle Alignment",
@@ -135,13 +155,15 @@
         "toggleFullscreen": "Toggle Fullscreen",
         "toggleTheaterMode": "Toggle Theater Mode",
         "showSubtitlePlayer": "Show Subtitle List",
-        "hideSubtitlePlayer": "Hide Subtitle List"
+        "hideSubtitlePlayer": "Hide Subtitle List",
+        "currentTimestamp": "Current Timestamp"
     },
     "copyHistory": {
         "blank": "空白的",
         "downloadMinedSubsAsSrt": "下载已挖掘字幕作为SRT文件",
         "exportToAnki": "导出到Anki",
-        "miningHistoryEmpty": "挖掘历史记录为空。"
+        "miningHistoryEmpty": "挖掘历史记录为空。",
+        "deleteAll": "Clear"
     },
     "error": {
         "bothAudioAndVideNotAllowed": "无法同时加载音频和视频文件",
@@ -182,6 +204,7 @@
         "videoDataSync": {
             "emptySubtitleTrack": "空的",
             "loadSubtitlesFirst": "必须先加载字幕，然后才能开始挖掘。",
+            "failedToAutoLoad": "Could not auto-load subtitles in your preferred language.",
             "rememberTrackPreference": "Remember these track choices for this site",
             "selectSubtitles": "选择字幕",
             "subtitleTrack": "字幕轨道",
@@ -222,7 +245,8 @@
         "connectionFailed": "Connection failed",
         "error": "Error: {{message}}",
         "errorNoMessage": "Error",
-        "toggleSubtitlesShortcut": "Press \"{{keys}}\" to toggle subtitle display"
+        "toggleSubtitlesShortcut": "Press \"{{keys}}\" to toggle subtitle display",
+        "manualMiningIntervalPrompt": "Use mining shortcut again to select time range"
     },
     "landing": {
         "cta": "拖放字幕和媒体文件，或<1>浏览</1>。",
@@ -287,6 +311,7 @@
         "preCacheSubtitleDom": "预缓存字幕DOM",
         "preCacheSubtitleDomHelperText": "如果启用，asbplayer将预呈现屏幕外文档中的字幕文本元素，并将这些元素重新用于字幕显示。这允许外部代码在显示字幕文本之前持续修改字幕文本。",
         "recordingBind": "录音",
+        "recordWithAudioPlayback": "录制并播放音频",
         "rememberSubtitleOffset": "记住字幕偏移量",
         "sentenceField": "句子字段",
         "streamingVideo": "Streaming Video",
@@ -308,6 +333,7 @@
         "subtitleShadowThickness": "Subtitle Shadow Thickness",
         "subtitleOutlineThicknessHelperText": "在字幕文本周围添加轮廓线。如果这会导致线条重叠，请尝试使用其他字体。",
         "subtitlePositionOffset": "字幕位置从底部偏移",
+        "topSubtitlePositionOffset": "字幕位置从顶部偏移",
         "subtitleAlignment": "字幕对齐方式",
         "subtitleAlignmentBottom": "底部",
         "subtitleAlignmentTop": "顶部",
@@ -323,6 +349,7 @@
         "subtitleRegexFilterTextReplacement": "字幕正则筛选器文本替换",
         "subtitleSize": "字幕大小",
         "subtitleThickness": "字幕字体厚度",
+        "subtitlesWidth": "Subtitles Width",
         "surroundingSubtitlesCountRadius": "环绕字幕计数半径",
         "surroundingSubtitlesTimeRadius": "环绕字幕时间半径",
         "tags": "标签",
@@ -338,7 +365,8 @@
         "webSocketClientEnabled": "Enable WebSocket client",
         "webSocketServerUrl": "WebSocket Server URL",
         "firefoxExtensionShortcutHelp": "Edit this shortcut from the Plugin manager at about:addons.",
-        "postMinePlayback": "Post-mining playback state"
+        "postMinePlayback": "Post-mining playback state",
+        "pauseOnHoverMode": "Auto-pause when mousing over subtitles"
     },
     "subtitlePlayer": {
         "multiSubtitleSelectHelp": "Click, hold, and drag to mine multiple subtitles"

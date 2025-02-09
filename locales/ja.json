@@ -23,6 +23,15 @@
         "decreaseOffsetButton": "次の字幕を現在のタイムスタンプに合わせる。長押しすると、字幕表示タイミングが100msずつ変わる。",
         "increaseOffsetButton": "前の字幕を現在のタイムスタンプに合わせる。長押しすると、字幕表示タイミングが100msずつ変わる。"
     },
+    "about": {
+        "title": "asbplayerについて",
+        "license": "ライセンス",
+        "deps": "依存関係のあるライブラリ",
+        "depName": "プロジェクト名",
+        "purpose": "用途",
+        "appVersion": "アプリバージョン",
+        "extensionVersion": "拡張機能バージョン"
+    },
     "postMineAction": {
         "none": "何もしない",
         "showAnkiDialog": "Anki のエクスポートウィンドウを開く",
@@ -33,6 +42,11 @@
         "remember": "マイニング前の状態を維持",
         "play": "常に再生する",
         "pause": "常に停止する"
+    },
+    "pauseOnHoverMode": {
+        "disabled": "無効",
+        "inNotOut": "有効",
+        "inAndOut": "有効。マウスカーソルを外すと自動再生。"
     },
     "ankiDialog": {
         "applySelection": "選択範囲を適用する",
@@ -45,9 +59,11 @@
         "foundDuplicateNotes": "フィールド「{{field}}」に単語「{{word}}」 が含まれるメモが {{count}} 件見つかりました",
         "foundNoDuplicateNote": "フィールド「{{field}}」に単語「{{word}}」 が含まれるメモはありません",
         "image": "画像",
+        "imageCaptureFailed": "画像キャプチャに失敗しました",
         "imageFileLinkLost": "ブラウザページを更新したため、画像ファイルの参照先が失われました",
         "openInAnki": "Anki で開く",
         "rerecord": "再録音",
+        "rerecordAndApplySelection": "選択した時間範囲を録音",
         "resetSlider": "リセット",
         "rewind": "巻き戻し",
         "searchInAnki": "Anki で検索する",
@@ -62,7 +78,9 @@
         "url": "URL",
         "word": "単語",
         "zoomIn": "ズームイン",
-        "zoomOut": "ズームアウト"
+        "zoomOut": "ズームアウト",
+        "imagePreview": "プレビュー・編集",
+        "quickSelectFtue": "{{shortcut}}は最後に使用したアクションを選択/実行します。"
     },
     "bar": {
         "donate": "寄付",
@@ -88,7 +106,7 @@
         "extensionToggleRecording": "字幕ファイルがロードされていても手動で録音を開始/終了する。",
         "extensionUpdateLastCard": "最後に作成した Anki カードに asbplayer でキャプチャしたメディアを添付して更新する。動画が字幕ファイルなしで同期されている場合、録音を開始/停止する。",
         "increaseOffset": "字幕の表示タイミング +100ms",
-        "increasePlaybackRate": "再生速度を下げる",
+        "increasePlaybackRate": "再生速度を上げる",
         "resetOffset": "字幕の表示タイミングをリセット",
         "seekBackward": "10 秒巻き戻し",
         "seekBackwardOrForward": "10 秒巻き戻し/早送り",
@@ -104,6 +122,7 @@
         "toggleAsbplayerSubtitleTrack3": "asbplayer の字幕トラック 3 オン/オフ",
         "toggleAsbplayerSubtitleTracks": "asbplayer の字幕トラック オン/オフ",
         "toggleAsbplayerBlurTrack": "asbplayer の字幕トラック {{trackNumber}} のぼかし オン/オフ",
+        "unblurAsbplayerTrack": "asbplayer の字幕トラック {{trackNumber}} のぼかしを解除",
         "toggleAutoPause": "自動一時停止オン/オフ",
         "toggleCondensedPlayback": "短縮プレイバック",
         "toggleFastForwardPlayback": "早送りプレイバックオン/オフ",
@@ -122,6 +141,7 @@
         "condensedMode": "短縮",
         "fastForwardMode": "早送り",
         "normalMode": "通常",
+        "repeatMode": "リピート",
         "playbackRate": "再生速度",
         "subtitleOffset": "字幕表示タイミング",
         "subtitleAlignment": "字幕の表示位置",
@@ -129,19 +149,21 @@
         "playbackMode": "プレイバックモード",
         "unloadVideo": "動画をアンロード",
         "selectAudioTrack": "オーディオトラックを選択",
-        "selectVideoElement": "動画埋め込み要素",
+        "selectVideoElement": "動画埋め込み要素を選択",
         "popOut": "動画をポップアウト",
         "popIn": "動画をポップイン",
         "toggleFullscreen": "フルスクリーンオン/オフ",
         "toggleTheaterMode": "シアターモードオン/オフ",
         "showSubtitlePlayer": "字幕リストを表示",
-        "hideSubtitlePlayer": "字幕リストを非表示"
+        "hideSubtitlePlayer": "字幕リストを非表示",
+        "currentTimestamp": "タイムスタンプ"
     },
     "copyHistory": {
         "blank": "空白",
         "downloadMinedSubsAsSrt": "マイニングした字幕を SRT 形式でダウンロードする",
         "exportToAnki": "Anki にエクスポートする",
-        "miningHistoryEmpty": "マイニング履歴はありませïん"
+        "miningHistoryEmpty": "マイニング履歴はありません",
+        "deleteAll": "全てを削除"
     },
     "error": {
         "bothAudioAndVideNotAllowed": "音声と動画ファイルを同時にロードできません",
@@ -165,7 +187,7 @@
             "cropScreenshot": "スクリーンショットのクロッピング",
             "displaySubtitles": "字幕表示オン/オフ",
             "dragAndDrop": "字幕ファイルのドラッグ＆ドロップを許可",
-            "openSubtitleList": "字幕ロード時に字幕リストを開く",
+            "openSubtitleList": "字幕ロード時に、字幕リストを別のタブで開く",
             "mining": "マイニング",
             "miningKeyboardShortcuts": "マイニング関連のキーボードショートカット",
             "misc": "その他",
@@ -182,6 +204,7 @@
         "videoDataSync": {
             "emptySubtitleTrack": "空",
             "loadSubtitlesFirst": "マイニングを開始する前に字幕をロードしてください。",
+            "failedToAutoLoad": "ご希望の言語の字幕を自動的にロード出来ませんでした",
             "rememberTrackPreference": "字幕トラックの選択を記憶する",
             "selectSubtitles": "字幕を選択",
             "subtitleTrack": "字幕トラック",
@@ -222,7 +245,8 @@
         "connectionFailed": "接続に失敗しました",
         "error": "エラー：{{message}}",
         "errorNoMessage": "エラー",
-        "toggleSubtitlesShortcut": "字幕を表示するには 「{{keys}}」 を押してください"
+        "toggleSubtitlesShortcut": "字幕を表示するには 「{{keys}}」 を押してください",
+        "manualMiningIntervalPrompt": "マイニングショートカットを再度使用してください"
     },
     "landing": {
         "cta": "字幕やメディアファイルをドラッグ＆ドロップ、または<1>ファイルを選択</1>してください。",
@@ -244,9 +268,9 @@
     "settings": {
         "activeProfile": "設定プロファイル",
         "defaultProfile": "デフォルト",
-        "newProfile": "新しい設定プロフィールを作成",
-        "profileName": "設定プロフィール名",
-        "enterProfileName": "設定プロフィール名を入力",
+        "newProfile": "新しい設定プロファイルを作成",
+        "profileName": "設定プロファイル名",
+        "enterProfileName": "設定プロファイル名を入力",
         "profileLimitReached": "設定プロファイルの上限数に達しました",
         "addCustomCss": "カスタムCSSを追加",
         "addCustomField": "カスタムフィールドを追加",
@@ -287,6 +311,7 @@
         "preCacheSubtitleDom": "字幕DOMをキャッシュ",
         "preCacheSubtitleDomHelperText": "この設定をオンにすると、asbplayer は隠れたDOM要素に字幕をレンダリングし、字幕が表示される際には既存の要素を再利用します。そのため、字幕のテキストは外部のコードによって永続的に変更可能となります。",
         "recordingBind": "記録中",
+        "recordWithAudioPlayback": "ローカルビデオから録音の際、音声を再生",
         "rememberSubtitleOffset": "字幕の表示タイミングを記憶する",
         "sentenceField": "文（全トラックを含む）",
         "streamingVideo": "ストリーミングビデオ",
@@ -307,7 +332,8 @@
         "subtitleShadowColor": "字幕の影の色",
         "subtitleShadowThickness": "字幕の影の太さ",
         "subtitleOutlineThicknessHelperText": "字幕に縁取りが追加される。縁取りの線が重なっているように見える場合、別のフォントを試してみてください。",
-        "subtitlePositionOffset": "字幕表示位置の調整",
+        "subtitlePositionOffset": "下部の字幕表示位置の調整",
+        "topSubtitlePositionOffset": "上部の字幕表示位置の調整",
         "subtitleAlignment": "字幕の表示位置",
         "subtitleAlignmentBottom": "下部",
         "subtitleAlignmentTop": "上部",
@@ -323,6 +349,7 @@
         "subtitleRegexFilterTextReplacement": "字幕の正規表現フィルタの置き換えテキスト",
         "subtitleSize": "字幕のサイズ",
         "subtitleThickness": "字幕のフォントの太さ",
+        "subtitlesWidth": "字幕の幅",
         "surroundingSubtitlesCountRadius": "前後に表示される字幕の最大数",
         "surroundingSubtitlesTimeRadius": "前後の字幕が表示される範囲（時間）",
         "tags": "タグ",
@@ -338,7 +365,8 @@
         "webSocketClientEnabled": "WebSocketクライアントを有効",
         "webSocketServerUrl": "WebSocketサーバーのURL",
         "firefoxExtensionShortcutHelp": "ショートカットの編集はプラグイン管理 （about:addons）で行えます。",
-        "postMinePlayback": "マイニング後のプレイバック状態"
+        "postMinePlayback": "マイニング後のプレイバック状態",
+        "pauseOnHoverMode": "マウスカーソルを字幕に重ねると自動一時停止"
     },
     "subtitlePlayer": {
         "multiSubtitleSelectHelp": "複数の字幕をマイニングするには、クリックし、押し続け、ドラッグしてください"

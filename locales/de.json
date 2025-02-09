@@ -23,6 +23,15 @@
         "decreaseOffsetButton": "Decrease offset to so that next subtitle is at current position. Hold to decrease by 100ms.",
         "increaseOffsetButton": "Increase offset to so that previous subtitle is at current position. Hold to increase by 100ms."
     },
+    "about": {
+        "title": "About asbplayer",
+        "license": "License",
+        "deps": "Dependencies",
+        "depName": "Name",
+        "purpose": "Purpose",
+        "appVersion": "App version",
+        "extensionVersion": "Extension version"
+    },
     "postMineAction": {
         "none": "None",
         "showAnkiDialog": "Show Anki dialog",
@@ -33,6 +42,11 @@
         "remember": "Keep previous state (as before mining)",
         "play": "Always play",
         "pause": "Always pause"
+    },
+    "pauseOnHoverMode": {
+        "disabled": "Disabled",
+        "inNotOut": "Enabled",
+        "inAndOut": "Enabled with auto-resume"
     },
     "ankiDialog": {
         "applySelection": "Auswahl anwenden",
@@ -45,9 +59,11 @@
         "foundDuplicateNotes": "{{count}} Notizen mit Wort \"{{word}}\" in Feld \"{{field}}\" gefunden",
         "foundNoDuplicateNote": "Nach Anki exportieren",
         "image": "Bild",
+        "imageCaptureFailed": "Image capture failed",
         "imageFileLinkLost": "Bilddatei verloren aufgrund Seitenneuladens",
         "openInAnki": "In Anki öffnen",
         "rerecord": "Neuaufnahme",
+        "rerecordAndApplySelection": "Record selected time range",
         "resetSlider": "Zurücksetzen",
         "rewind": "Zu Zeilenanfang",
         "searchInAnki": "In Anki suchen",
@@ -62,7 +78,9 @@
         "url": "URL",
         "word": "Wort",
         "zoomIn": "Hereinzoomen",
-        "zoomOut": "Herauszoomen"
+        "zoomOut": "Herauszoomen",
+        "imagePreview": "Click to preview/edit",
+        "quickSelectFtue": "{{shortcut}} selects the last-used action."
     },
     "bar": {
         "donate": "Spenden",
@@ -104,6 +122,7 @@
         "toggleAsbplayerSubtitleTrack3": "Untertitel 3 in asbplayer umschalten",
         "toggleAsbplayerSubtitleTracks": "Untertitel in absplayer umschalten",
         "toggleAsbplayerBlurTrack": "Toggle subtitle track {{trackNumber}} blur in asbplayer",
+        "unblurAsbplayerTrack": "Unblur subtitle track {{trackNumber}} in asbplayer",
         "toggleAutoPause": "Auto-Pause aktivieren / deaktivieren",
         "toggleCondensedPlayback": "Komprimiertes Audio-Playback aktivieren / deaktivieren",
         "toggleFastForwardPlayback": "Toggle fast forward playback",
@@ -122,6 +141,7 @@
         "condensedMode": "Condensed",
         "fastForwardMode": "Fast-forward",
         "normalMode": "Normal",
+        "repeatMode": "Repeat",
         "playbackRate": "Playback Rate",
         "subtitleOffset": "Subtitle Offset",
         "subtitleAlignment": "Subtitle Alignment",
@@ -135,13 +155,15 @@
         "toggleFullscreen": "Toggle Fullscreen",
         "toggleTheaterMode": "Toggle Theater Mode",
         "showSubtitlePlayer": "Show Subtitle List",
-        "hideSubtitlePlayer": "Hide Subtitle List"
+        "hideSubtitlePlayer": "Hide Subtitle List",
+        "currentTimestamp": "Current Timestamp"
     },
     "copyHistory": {
         "blank": "Leer",
         "downloadMinedSubsAsSrt": "Extrahierte Untertitel als SRT herunterladen",
         "exportToAnki": "Nach Anki exportieren",
-        "miningHistoryEmpty": "Keine Untertitel extrahiert"
+        "miningHistoryEmpty": "Keine Untertitel extrahiert",
+        "deleteAll": "Clear"
     },
     "error": {
         "bothAudioAndVideNotAllowed": "Cannot load both an audio and video file simultaneously",
@@ -182,6 +204,7 @@
         "videoDataSync": {
             "emptySubtitleTrack": "Empty",
             "loadSubtitlesFirst": "Untertitel müssen ausgewählt werden",
+            "failedToAutoLoad": "Could not auto-load subtitles in your preferred language.",
             "rememberTrackPreference": "Remember these track choices for this site",
             "selectSubtitles": "Untertitel auswählen",
             "subtitleTrack": "Untertitelspur",
@@ -222,7 +245,8 @@
         "connectionFailed": "Connection failed",
         "error": "Error: {{message}}",
         "errorNoMessage": "Error",
-        "toggleSubtitlesShortcut": "Press \"{{keys}}\" to toggle subtitle display"
+        "toggleSubtitlesShortcut": "Press \"{{keys}}\" to toggle subtitle display",
+        "manualMiningIntervalPrompt": "Use mining shortcut again to select time range"
     },
     "landing": {
         "cta": "Untertitel und Medien hierher ziehen oder <1>suchen</1>",
@@ -287,6 +311,7 @@
         "preCacheSubtitleDom": "Pre-cache Subtitle DOM",
         "preCacheSubtitleDomHelperText": "If enabled, asbplayer will pre-render subtitle text elements in an offscreen document, and re-use those elements for subtitle display. This allows external code to persistently modify subtitle text before it is displayed.",
         "recordingBind": "Aufnahme...",
+        "recordWithAudioPlayback": "Audiowiedergabe während der Aufnahme von lokalem Video",
         "rememberSubtitleOffset": "Untertiteloffset merken",
         "sentenceField": "Satz-Feld",
         "streamingVideo": "Streaming Video",
@@ -308,6 +333,7 @@
         "subtitleShadowThickness": "Subtitle Shadow Thickness",
         "subtitleOutlineThicknessHelperText": "Adds an outline around subtitle text. If this causes overlapping lines, try using a different font.",
         "subtitlePositionOffset": "Untertitelabstand vom unteren Bildschirmrand",
+        "topSubtitlePositionOffset": "Untertitelabstand vom oberer Bildschirmrand",
         "subtitleAlignment": "Untertitel-Position",
         "subtitleAlignmentBottom": "Unten",
         "subtitleAlignmentTop": "Oben",
@@ -323,6 +349,7 @@
         "subtitleRegexFilterTextReplacement": "Untertitelfilter Ersetzung",
         "subtitleSize": "Untertitelgröße",
         "subtitleThickness": "Subtitle Font Thickness",
+        "subtitlesWidth": "Subtitles Width",
         "surroundingSubtitlesCountRadius": "Surrounding Subtitles Count Radius",
         "surroundingSubtitlesTimeRadius": "Surrounding Subtitles Time Radius",
         "tags": "Schlagwörter",
@@ -338,7 +365,8 @@
         "webSocketClientEnabled": "Enable WebSocket client",
         "webSocketServerUrl": "WebSocket Server URL",
         "firefoxExtensionShortcutHelp": "Edit this shortcut from the Plugin manager at about:addons.",
-        "postMinePlayback": "Post-mining playback state"
+        "postMinePlayback": "Post-mining playback state",
+        "pauseOnHoverMode": "Auto-pause when mousing over subtitles"
     },
     "subtitlePlayer": {
         "multiSubtitleSelectHelp": "Click, hold, and drag to mine multiple subtitles"
