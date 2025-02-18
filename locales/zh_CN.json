@@ -377,6 +377,6 @@
     },
     "app": {
         "pwaUpdatePromptTitle": "App update",
-        "pwaUpdatePromptBody": "Click \"OK\" to update."
+        "pwaUpdatePromptBody": "Click \"OK\" to complete update."
     }
 }
